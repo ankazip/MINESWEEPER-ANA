@@ -1,10 +1,8 @@
 const grid = document.getElementById("grid");
 let lockGame = false;
-//Set test Mode to true if you want see mines location
 const testMode = false;
 generateGrid();
 
-// Generate 10 * 10 Grid
 function generateGrid(){
     lockGame = false;
     grid.innerHTML = "";
@@ -21,7 +19,6 @@ function generateGrid(){
  generateMines();
 }
 
-//Generate mines randomly
 function generateMines(){
     //Add 20 mines to game
     for(var i = 0; i < 20; i++){
@@ -35,7 +32,6 @@ function generateMines(){
     }
 }
 
-//Hightlight all mines red
 function revealMines(){
     for(var i = 0; i < 10; i++){
         for(var j = 0; j < 10; j++){
